@@ -126,7 +126,7 @@ function updateAddresses()
 					//IE6 bug fix
 					if(error != 'indexOf')
 						errors += jsonData.errors[error] + "\n";
-				alert(errors);
+				alert($("</div>").html(errors).text());
 			}
 		},
 		error: function(XMLHttpRequest, textStatus, errorThrown) {
